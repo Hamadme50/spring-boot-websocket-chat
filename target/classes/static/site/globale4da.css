@@ -1,0 +1,60 @@
+/* Page headers */
+.bs-header {
+    padding: 30px 15px 40px; /* side padding builds on .container 15px, so 30px */
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    color: #585858;
+    background-color: #E7E7E7;
+}
+.bs-header h1 {
+    color: #FF5100;
+}
+.bs-header p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+.bs-header .container {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .bs-header {
+        font-size: 21px;
+        text-align: left;
+    }
+    .bs-header h1 {
+        font-size: 60px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .bs-header h1,
+    .bs-header p {
+        margin-right: 380px;
+    }
+}
+
+ol.howWorksList li {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 8px;
+}
+
+.chatSearchForm {
+    margin-bottom: 16px;
+}
+
+.features {
+    padding-top: 36px;
+}
+.features .media {
+    text-align: left;
+    display: inline-block;
+    width: 363px;
+    vertical-align: top;
+    margin-top:0;
+    margin-right: 14px;
+    height: 113px;
+}

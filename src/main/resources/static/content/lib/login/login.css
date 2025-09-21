@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+    color: white !important;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+.vertical{
+    position: relative;
+    top: 30%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+}
+.centered{
+    width: 200px;
+    margin-left: 45px;
+    padding-top: 5px;
+}
+.loginbutton{
+
+}
+.spanstyle{
+    font-size: 12px;
+}
+form{
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+.transparent{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    color: white;
+    padding: 0 !important;
+}
+.chatname{
+    font-size: 80px;
+    font-weight: 400 !important;
+}
+.chattopic{
+    font-size: 80px;
+    padding-left: 1px;
+    padding-right: 1px;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .chatname{
+        font-size: 50px;
+    }
+    .chattopic{
+        font-size: 12px;
+    }
+    .profileWidth{
+        width: 90% !important;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .chatname{
+        font-size: 55px;
+    }
+    .chattopic{
+        font-size: 13px;
+    }
+    .profileWidth{
+        width: 90% !important;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .chatname{
+        font-size: 60px;
+    }
+    .chattopic{
+        font-size: 14px;
+    }
+    .profileWidth{
+        width: 90% !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 800px and up) */
+@media only screen and (min-width: 800px) {
+    .chatname{
+        font-size: 60px;
+    }
+    .profileWidth{
+        width: 30% !important;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .chatname{
+        font-size: 65px;
+    }
+    .profileWidth{
+        width: 30% !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 980px and up) */
+@media only screen and (min-width: 1200px) {
+    .chatname{
+        font-size: 70px;
+    }
+    .profileWidth{
+        width: 30% !important;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    .chatname{
+        font-size: 80px;
+    }
+    .profileWidth{
+        width: 30% !important;
+    }
+
+}
+
+.smallModal{
+    display: none;
+    position: fixed;
+    z-index: 19;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 10%;
+    padding-bottom: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: #000000;
+}
+#smallModalHtml{
+    z-index: 20; left: 0;right: 0;margin: auto;background-color: white;padding: 20px;border-radius: 5px;border-color: transparent;
+}
+.links{
+    color: #1D6E9C;
+    text-decoration: none;
+}

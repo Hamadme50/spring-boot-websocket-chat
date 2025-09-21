@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
+         updateCheck="true"
+         monitoring="autodetect"
+         dynamicConfig="true">
+
+    <cache name="Users"
+           maxElementsInMemory="50000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+    <cache name="PrivateChat"
+           maxElementsInMemory="2900000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+
+    <cache name="Chat"
+           maxElementsInMemory="5000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+
+    <cache name="Rank"
+           maxElementsInMemory="2000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+
+    <cache name="Permission"
+           maxElementsInMemory="2000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+
+    <cache name="Friends"
+           maxElementsInMemory="10000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+
+    <cache name="Notifications"
+           maxElementsInMemory="500000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="300"
+           timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+
+</ehcache>

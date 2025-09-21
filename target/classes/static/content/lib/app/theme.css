@@ -1,0 +1,44 @@
+.clIconBrush{
+    color: #666699;
+}
+.clIconUsers{
+    color: #666699;
+}
+.clIconSend{
+    color: #33cc33;
+}
+.clIcons{
+    color: #666699;
+}
+#chat_footer{
+    background-color:transparent;
+}
+.iconssize{
+    font-size: 20px; color: white;
+}
+
+.iconscolor{
+     color: white;
+}
+.iconsmily{
+    color: #FFD700;
+}
+.iconwriting{
+    color: #785600;
+}
+.user_name{
+    color: white;
+    font-weight: bold;
+}
+.roundimage{
+    -mox-box-shadow: 0 0 1px white;
+    -webkit-box-shadow: 0 0 1px white;
+    box-shadow: 0 0 1px white;
+    border: solid white;
+    display:block;
+    border-radius:100%;
+    display:block;
+    width:36px;
+    height:36px;
+    background: lightgray;
+}

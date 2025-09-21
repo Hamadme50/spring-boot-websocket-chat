@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+}
+body {
+    padding: 50px 0 0 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    position: relative;
+}
+.hidden {
+    display: none;
+}
+.pageWrapper {
+    min-height: 100%;
+}
+
+.topmenu {
+    text-transform: uppercase;
+}
+.topmenu .nav .coinIcon {
+    margin-top:0;
+    vertical-align: baseline;
+}
+
+.topmenu .navbar-brand {
+    max-height: 50px;
+}
+.topmenu .navbar-brand img {
+    width: 120px;
+}
+
+.topmenu .navbar-nav > li.active {
+    font-weight: bold;
+}
+.topmenu .navbar-nav > li > a:hover {
+    background-color: #efefef;
+}
+
+.content {
+    padding:30px 0 140px 0;
+}
+
+/* footer */
+footer.pageFooter {
+    height: 100px;
+    overflow: hidden;
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+    margin-top: -100px;
+}
+footer.pageFooter .container {
+    padding-top: 10px;
+}
+footer.pageFooter .language {
+    float: right;
+}
+footer.pageFooter .language select {
+    font-size: 12px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+footer.pageFooter .language a.active {
+    color: #000;
+    font-weight: bold;
+}
+footer.pageFooter .language a.active:hover {
+    text-decoration: none;
+}
+
+/* icons */
+i.icon {
+    width:16px;
+    height:16px;
+    line-height: 16px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: text-top;
+    zoom: 1;
+    *display: inline;
+    position:relative;
+    margin-right:4px;
+}
+
+.section {
+    margin-top: -60px;
+    padding-top: 60px;
+}
+h3.section {
+    margin-top: -40px;
+}
+h4.section {
+    margin-top: -50px;
+}
