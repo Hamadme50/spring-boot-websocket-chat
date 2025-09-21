@@ -4,6 +4,9 @@ A production-ready WebSocket chat built with Spring Boot that runs **fast on low
 
 **Live Demo:** [https://chat-links.com/](https://chat-links.com/)
 
+Contact me if needed
+https://upwork.com/freelancers/~0194332d59dcc18028
+
 ## Table of Contents
 
 * [Overview](#overview)
@@ -146,13 +149,10 @@ java -version
 mvn -version
 ```
 
-2. **Install MySQL**
+2. **Import database.sql MySQL**
 
 ```sql
-CREATE DATABASE chatdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'chatuser'@'%' IDENTIFIED BY 'StrongPassword!';
-GRANT ALL PRIVILEGES ON chatdb.* TO 'chatuser'@'%';
-FLUSH PRIVILEGES;
+mysql -u root -p mydb < /path/to/database.sql
 ```
 
 3. **Install MongoDB**
@@ -174,9 +174,6 @@ db.createUser({
 
 ```powershell
 mvnw.cmd spring-boot:run
-# or
-mvnw.cmd -DskipTests package
-java -jar target/*.jar
 ```
 
 ---
@@ -303,44 +300,17 @@ spring.rabbitmq.password=guest
 **Development**
 
 ```bash
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
-**Package**
+**Production (publish)**
 
 ```bash
-./mvnw -DskipTests package
-java -jar target/*.jar
+sudo apt-get install screen
+screen -r chatlinks
+cd /path to your project
+mvn spring-boot:run
 ```
-
-**Production (single node, low VPS)**
-
-```bash
-java -Xms256m -Xmx512m -jar target/*.jar --server.port=8080
-```
-
-**Production (multi-node)**
-
-* Shared **Redis**, **MongoDB**, **MySQL** (+ **RabbitMQ** if enabled)
-* Multiple app nodes behind Nginx/HAProxy with WebSocket upgrades enabled
-
----
-
-## Embedding Rooms Anywhere
-
-Each room has a unique URL you can drop into any page with an `<iframe>`:
-
-```html
-<iframe
-  src="https://your-domain.tld/room/ROOM_ID"
-  width="100%"
-  height="640"
-  style="border:0; border-radius:8px; overflow:hidden;"
-  allow="clipboard-write; microphone; camera">
-</iframe>
-```
-
-Replace `ROOM_ID` with the room’s slug/ID.
 
 ---
 
@@ -450,6 +420,9 @@ Open the **Admin Panel** for that room to edit theme, banners, filters, slow-mod
 ---
 
 ### Author Notes
+
+contact me 
+https://upwork.com/freelancers/~0194332d59dcc18028
 
 * If you rename databases, update both **`MongoConfig.java`** and **`application.properties`**.
 * For RabbitMQ support, **uncomment** the code in **`WebSocketConfig.java`** and add the `spring.rabbitmq.*` properties shown above.
