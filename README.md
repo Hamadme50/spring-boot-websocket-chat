@@ -186,12 +186,11 @@ sudo apt install -y openjdk-17-jdk maven mysql-server redis-server
 sudo systemctl enable --now mysql redis-server
 
 # MySQL
-mysql -u root -p <<'SQL'
-CREATE DATABASE chatdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'chatuser'@'%' IDENTIFIED BY 'StrongPassword!';
-GRANT ALL PRIVILEGES ON chatdb.* TO 'chatuser'@'%';
-FLUSH PRIVILEGES;
-SQL
+**Import database.sql MySQL**
+
+```sql
+mysql -u root -p mydb < /path/to/database.sql
+```
 
 # MongoDB (install from official repo or distro)
 sudo systemctl start mongod
