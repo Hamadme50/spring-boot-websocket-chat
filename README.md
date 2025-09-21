@@ -4,7 +4,7 @@ A production-ready WebSocket chat built with Spring Boot that runs **fast on low
 
 **Live Demo:** [https://chat-links.com/](https://chat-links.com/)
 
-[![My Website](https://ibb.co/cX1vYftP)](https://chat-links.com)
+[![DEMO](https://i.ibb.co/cX1vYftP/Screenshot-20250922-021659-Chrome.png)](https://chat-links.com)
 
 Contact me if needed
 https://upwork.com/freelancers/~0194332d59dcc18028
