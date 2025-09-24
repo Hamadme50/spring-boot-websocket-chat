@@ -21,9 +21,6 @@ import java.util.Base64;
 
 import static com.app.chatlinks.websockets.ChatEngine.usersListRepo;
 
-//import static com.app.livechatzone.websockets.ChatController.usersListRepo;
-
-
 @Component
 public class WebSocketEventListener {
 
